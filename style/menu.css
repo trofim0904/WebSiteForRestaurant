@@ -1,0 +1,47 @@
+.menu{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+    color: #fff;
+}
+.menu #menutitle{
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+}
+.menu-types{
+    display: flex;
+    width: 100%;
+}
+.menu-types .menu-type{
+    width: 50%;
+    padding: 20px;
+    border: 2px solid #fff;
+    font-size: 2.0em;
+    text-align: center;
+    margin: 30px;
+    cursor: pointer;
+    transition: 1s all;
+}
+.menu-types .menu-type:hover{
+    border: 10px solid #fff;
+    padding: 12px;
+}
+.menu-types .type-active{
+    background: white;
+    color: black;
+    
+}
+.chosen-menu{
+    display: none;
+}
+.chosen-active{
+    display: block;
+}
+@media (max-width: 600px){
+    .menu-types .menu-type{
+        margin-right: 0;
+        margin-left: 0;
+        
+    }
+}

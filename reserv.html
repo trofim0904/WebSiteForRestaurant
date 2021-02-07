@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/nonstyle.css" />
+    <link rel="stylesheet" type="text/css" href="style/header.css" />
+    <link rel="stylesheet" type="text/css" href="style/reserv.css" />
+    <link rel="stylesheet" type="text/css" href="style/footer.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Резервування. Ресторан Sopilka</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Про Нас</a></li>
+                <li><a href="/menu.html#menutitle">Меню</a></li>
+                <li><a href="#">Галерея</a></li>
+                <li><a href="/reserv.html" class="active">Резервування</a></li>
+                <li><a href="#">Контакти</a></li>
+            
+            </ul>
+        </nav>
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <div class="center-text">
+            
+            <h1><p>ресторан</p>Sopilka</h1>
+            <div class="center-button">
+                <a href="/reserv.html#reserv-table">Замовити столик</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="reserv-table container">
+            <h2>Зарезервувати столик</h2>
+            <form id="reserv-table">
+                <section>
+                    <label for="name">Ім'я:</label>
+                    <input id="name" type="text">
+                </section>
+                <section>
+                    <label for="phone">Телефон:</label>
+                    <input id="phone" type="tel">
+                </section>
+                <section>
+                    <label for="count">Кількість людей:</label>
+                    <input id="count" type="number" min="1" max="10">
+                </section>
+                <section>
+                    <label for="date">Дата:</label>
+                    <input id="date" type="date">
+                </section>
+                <section>
+                    <label for="time">Час:</label>
+                    <input id="time" type="time">
+                </section>
+                <button id="submit" type="submit">Відправити</button>
+            </form>
+        </div>
+    </main>
+    <footer class="container">
+        <div class="footer-block" style="text-align: left;">
+            <h5>Lorem ipsum</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+        </div>
+        <div class="footer-block">
+            <h5>Контакти</h5>
+            <div class="phone-number">
+                <a href="tel:0999999999">0 (99) 999 99 99</a>
+            </div>
+            <div class="phone-number">
+                <a href="tel:0999999999">0 (99) 999 99 99</a>
+            </div>
+            <div class="phone-number">
+                <a href="tel:0999999999">0 (99) 999 99 99</a>
+            </div>
+        </div>
+        
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="/js/navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+footer{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    display: flex;
+    width: 100%;
+    line-height: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.footer-block{
+    width: 50%;
+    text-align: right;
+}
+.footer-block h5{
+    font-size: 1.9em;
+    font-weight: bold;
+    padding-bottom: 3%;
+
+}
+.footer-block p{
+    font-size: 1.4em;
+    
+}
+.footer-block .phone-number{
+    font-size: 1.4em;
+ 
+}
+@media (max-width: 600px){
+    footer{
+        display: block;
+    }
+    .footer-block{
+        width: 100%;
+        text-align: left;
+    }
+}
