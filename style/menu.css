@@ -32,16 +32,37 @@
     color: black;
     
 }
+
 .chosen-menu{
     display: none;
 }
 .chosen-active{
     display: block;
 }
+.chosen-menu table{
+    width: 100%;
+    font-size: 2.0em;
+    border: 2px solid #fff;
+    padding: 30px;
+    line-height: 30px;
+
+}
+.chosen-menu table th{
+    padding-bottom: 20px;
+}
+.chosen-menu table td{
+    padding-bottom: 10px;
+}
+.chosen-menu table td.price{
+    text-align: right;
+}
+
 @media (max-width: 600px){
     .menu-types .menu-type{
         margin-right: 0;
         margin-left: 0;
-        
+    }
+    .chosen-menu table{
+        font-size: 1.5em;
     }
 }
