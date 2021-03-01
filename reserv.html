@@ -11,6 +11,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Резервування. Ресторан Sopilka</title>
 </head>
+<script type="text/javascript" src="js/date_time.js"></script>
 <body>
     <header>
         <nav>
@@ -28,7 +29,7 @@
             
             <h1><p>ресторан</p>Sopilka</h1>
             <div class="center-button">
-                <a href="reserv.html#reserv-table">Замовити столик</a>
+                <a href="JavaScript: let isGo = confirm('Ви дійсно хочете замовити столик?'); if(isGo){window.location.href = 'reserv.html#reserv-table'};">Замовити столик</a>
             </div>
         </div>
     </header>
@@ -38,7 +39,7 @@
             <form id="reserv-table">
                 <section>
                     <label for="name">Ім'я:</label>
-                    <input id="name" type="text">
+                    <input id="name"  value="&{window.location.href};">
                 </section>
                 <section>
                     <label for="phone">Телефон:</label>
@@ -50,7 +51,7 @@
                 </section>
                 <section>
                     <label for="date">Дата:</label>
-                    <input id="date" type="date">
+                    <input id="date" value="&{getDate()}">
                 </section>
                 <section>
                     <label for="time">Час:</label>
@@ -80,6 +81,9 @@
         
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    
     <script type="text/javascript" src="js/navbar.js"></script>
+
 </body>
 </html>
