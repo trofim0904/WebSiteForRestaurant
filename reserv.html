@@ -10,15 +10,16 @@
     <link rel="stylesheet" type="text/css" href="style/footer.css" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Резервування. Ресторан Sopilka</title>
+    <script type="text/javascript" src="js/date_time.js"></script>
 </head>
-<script type="text/javascript" src="js/date_time.js"></script>
+
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Про Нас</a></li>
                 <li><a href="menu.html#menutitle">Меню</a></li>
-                <li><a href="#">Галерея</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
                 <li><a href="reserv.html" class="active">Резервування</a></li>
                 <li><a href="#">Контакти</a></li>
             
@@ -39,7 +40,7 @@
             <form id="reserv-table">
                 <section>
                     <label for="name">Ім'я:</label>
-                    <input id="name"  value="&{window.location.href};">
+                    <input id="name" type="text">
                 </section>
                 <section>
                     <label for="phone">Телефон:</label>
@@ -51,7 +52,7 @@
                 </section>
                 <section>
                     <label for="date">Дата:</label>
-                    <input id="date" value="&{getDate()}">
+                    <input id="date" type="date">
                 </section>
                 <section>
                     <label for="time">Час:</label>

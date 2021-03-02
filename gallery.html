@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/nonstyle.css" />
     <link rel="stylesheet" type="text/css" href="style/header.css" />
-    <link rel="stylesheet" type="text/css" href="style/about.css" />
+    <link rel="stylesheet" type="text/css" href="style/gallery.css" />
     <link rel="stylesheet" type="text/css" href="style/footer.css" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <title>Ресторан Sopilka</title>
+    <title>Галерея Ресторан Sopilka</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html" class="active">Про Нас</a></li>
+                <li><a href="index.html">Про Нас</a></li>
                 <li><a href="menu.html#menutitle">Меню</a></li>
-                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="gallery.html" class="active">Галерея</a></li>
                 <li><a href="reserv.html#reserv-table">Резервування</a></li>
                 <li><a href="JavaScript:alert('На даний момент сторінка КОНТАКТИ не доступна');">Контакти</a></li>
          
@@ -34,19 +34,23 @@
         </div>
     </header>
     <main>
-        <div class="about-us container">
-            <h2>Про Нас</h2>
-            <div class="about-section">
-                <div class="about-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-                <img src="img/about_first.jpg" alt="About us picture" title="About us picture">
-            </div>
-            <div class="about-section">
-                <div class="about-text" style="order: 2;"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-                <img src="img/about_second.jpg" style="order: 1;" alt="About us picture" title="About us picture">
-            </div>
-            <div class="about-section">
-                <div class="about-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-                <img src="img/about_third.jpg" alt="About us picture" title="About us picture">
+        <div class="gallery container">
+            <h2>Галерея</h2>
+            <div id="slider" class="slider">
+                <div class="item">
+                    <img class="item-img" src="img/gallery1.jpg">
+                </div>
+                <div class="item">
+                    <img class="item-img" src="img/gallery2.jpg">
+                </div>
+                <div class="item">
+                    <img class="item-img" src="img/gallery3.jpg">
+                </div>
+                <div class="item">
+                    <img class="item-img" src="img/gallery4.jpg">
+                </div>
+                <a class="previous" onclick="previousSlide()">&#10094;</a>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
             </div>
         </div>
     </main>
@@ -71,7 +75,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="js/navbar.js"></script>
-
+    <script type="text/javascript" src="js/gallery.js"></script>
     
 </body>
 </html>
