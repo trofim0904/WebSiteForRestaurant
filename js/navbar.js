@@ -3,3 +3,6 @@ $(document).ready(function(){
         $('nav').toggleClass('active')
     })
 })
+function headerFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}

@@ -16,7 +16,12 @@
         <nav>
             <ul>
                 <li><a href="index.html" class="active">Про Нас</a></li>
-                <li><a href="menu.html#menutitle">Меню</a></li>
+                <li onclick="headerFunction()"><a href="#">Меню</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="menu.html#menutitle">Бар</a>
+                        <a href="menu.html#menutitle">Кухня</a>
+                      </div>
+                </li>
                 <li><a href="gallery.html">Галерея</a></li>
                 <li><a href="reserv.html#reserv-table">Резервування</a></li>
                 <li><a href="JavaScript:alert('На даний момент сторінка КОНТАКТИ не доступна');">Контакти</a></li>

@@ -112,9 +112,7 @@ header nav ul li a:hover{
     transform: translate(-50%,-50%);
     font-size: 0.5em;
     z-index: 2;
-    /* background-color: rgba(0, 0, 0, 0.2); */
 
-    /* margin-bottom: -50px; */
 }
 
 .center-text .center-button{
@@ -154,3 +152,26 @@ header nav ul li a:hover{
     padding-left: 10%;
     padding-right: 10%;
 }
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    width: 50%;
+    height: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+}
+
+
+.show {display: block;}
