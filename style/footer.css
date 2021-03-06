@@ -1,15 +1,24 @@
 footer{
     background-color: rgba(0, 0, 0, 0.9);
     color: #fff;
-    display: flex;
+
     width: 100%;
-    line-height: 30px;
+   
     padding-top: 40px;
     padding-bottom: 40px;
+}
+footer .first-level{
+    display: flex;
+    line-height: 30px;
 }
 .footer-block{
     width: 50%;
     text-align: right;
+}
+.informers-block h5{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 3%;
 }
 .footer-block h5{
     font-size: 1.9em;

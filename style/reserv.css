@@ -46,3 +46,23 @@
         width: 100%;
     }
 }
+
+#accordion h3,
+#accordion div{
+    color: #fff;
+    background: black;
+    border:0;
+}
+/* #accordion .ui-accordion-header 
+{ 
+    background-color: red; 
+    border-radius: 0;
+    border:0;
+} */
+#accordion .ui-accordion-header.ui-state-active 
+{ 
+    background-color: #130f40; 
+    color: #fff;
+    border:0;
+    border-radius: 0;
+}
