@@ -1,0 +1,18 @@
+#IUAfinance6 {min-width: 210px; width: 210px; position: relative;}
+#IUAfinance6 * {margin: 0; padding: 0;}
+#IUAfinance6 a, #IUAfinance6 a:hover {border: none; text-decoration: underline; color: inherit;}
+#IUAfinance6 .IUAfinance_block {overflow: hidden; padding: 4px; font-family: Arial; font-size: 10px; background: #F6F6F6; border: 1px solid #00529c; color: #000000;}
+#IUAfinance6 .IUAfinance_title {overflow: hidden; margin-top: -4px; font-size: 12px; font-weight: bold; height: 20px; line-height: 20px; color: #00529C;}
+#IUAfinance6 .IUAfinance_title i {position: absolute; right: 4px; top: 2px; width: 36px; height: 14px; background: url(//i.i.ua/v2/logo/logo_small_14_black.png) no-repeat 0 0 transparent; opacity: .3;}
+#IUAfinance6 .IUAfinance_content, #IUAfinance6 .IUAfinance_content:hover {display: block; background: #FFFFFF; padding: 4px; margin-bottom: 4px; text-decoration: none; color: inherit;}
+#IUAfinance6 .IUAfinance_head_title {font-size: 12px; font-weight: bold;}
+#IUAfinance6 .IUAfinance_item,
+#IUAfinance6 .IUAfinance_head {padding: 4px 0;}
+#IUAfinance6 .IUAfinance_item:last-child {padding-bottom: 0;}
+#IUAfinance6 .IUAfinance_item {border-top: 1px dotted #DDD; font-size: 18px; font-family: Trebuchet MS;}
+#IUAfinance6 .IUAfinance_item_title,
+#IUAfinance6 .IUAfinance_item_data {display: inline-block; vertical-align: top; width: 42%; text-align: right;}
+#IUAfinance6 .IUAfinance_item_title:first-child,
+#IUAfinance6 .IUAfinance_item_data:first-child  {width: 16%; text-align: left;}
+#IUAfinance6 .IUAfinance-increase:before {content: "\25B2";  color: #40983c; font-size: 11px;}
+#IUAfinance6 .IUAfinance-decrease:before {content: "\25BC";  color: #ed482e; font-size: 11px;}
