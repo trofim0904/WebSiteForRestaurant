@@ -6,31 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/nonstyle.css" />
     <link rel="stylesheet" type="text/css" href="style/header.css" />
-    <link rel="stylesheet" type="text/css" href="style/reserv.css" />
+    <link rel="stylesheet" type="text/css" href="style/about.css" />
     <link rel="stylesheet" type="text/css" href="style/footer.css" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <title>Резервування. Ресторан Sopilka</title>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#accordion" ).accordion();
-  } );
-  </script>
-
-
+    <title>Ресторан Sopilka</title>
 </head>
-
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Про Нас</a></li>
-                <li><a href="menu.html#menutitle">Меню</a></li>
-                <li><a href="gallery.html">Галерея</a></li>
-                <li><a href="reserv.html" class="active">Резервування</a></li>
-                <li><a href="#">Контакти</a></li>
+        <ul>
+                <li><a href="index.php" class="active">Про Нас</a></li>
+                <li><a href="menu.php#menutitle">Меню</a></li>
+                <li><a href="gallery.php">Галерея</a></li>
+                <li><a href="reserv.php#reserv-table">Резервування</a></li>
+                <li><a href="JavaScript:alert('На даний момент сторінка КОНТАКТИ не доступна');">Контакти</a></li>
+         
             
             </ul>
         </nav>
@@ -39,81 +29,26 @@
             
             <h1><p>ресторан</p>Sopilka</h1>
             <div class="center-button">
-                <a href="JavaScript: let isGo = confirm('Ви дійсно хочете замовити столик?'); if(isGo){window.location.href = 'reserv.html#reserv-table'};">Замовити столик</a>
+                <a href="JavaScript: let isGo = confirm('Ви дійсно хочете замовити столик?'); if(isGo){window.location.href = 'reserv.php#reserv-table';}">Замовити столик</a>
             </div>
         </div>
     </header>
     <main>
-        <div class="reserv-table container">
-            <h2>Зарезервувати столик</h2>
-            <form id="reserv-table">
-                <section>
-                    <label for="name">Ім'я:</label>
-                    <input id="name" type="text">
-                </section>
-                <section>
-                    <label for="phone">Телефон:</label>
-                    <input id="phone" type="tel">
-                </section>
-                <section>
-                    <label for="count">Кількість людей:</label>
-                    <input id="count" type="number" min="1" max="10">
-                </section>
-                <section>
-                    <label for="date">Дата:</label>
-                    <input id="date" type="date">
-                </section>
-                
-                <section>
-                    <label for="time">Час:</label>
-                    <input id="time" type="time">
-                </section>
-                <button id="submit" type="submit">Відправити</button>
-            </form>
-        
-
-        <h2 style="margin-top:30px; text-align: left; margin-bottom: 15px; font-size: 1.5em;" >FAQ по резервуванню</h2>
-        <div id="accordion" >
-            <h3>Mauris mauris ante?</h3>
-            <div>
-              <p>
-              Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-              ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-              amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-              odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-              </p>
+        <div class="about-us container">
+            <h2>Про Нас</h2>
+            <div class="about-section">
+                <div class="about-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+                <img src="img/about_first.jpg" alt="About us picture" title="About us picture">
             </div>
-            <h3>Sed non urna. Donec et ante?</h3>
-            <div>
-              <p>
-              Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-              purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-              velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-              suscipit faucibus urna.
-              </p>
+            <div class="about-section">
+                <div class="about-text" style="order: 2;"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+                <img src="img/about_second.jpg" style="order: 1;" alt="About us picture" title="About us picture">
             </div>
-            <h3>Nam enim risus, molestie et?</h3>
-            <div>
-              <p>
-              Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-              Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-              ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-              lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-              </p>
+            <div class="about-section">
+                <div class="about-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+                <img src="img/about_third.jpg" alt="About us picture" title="About us picture">
             </div>
-            <h3>Cras dictum. Pellentesque?</h3>
-            <div>
-              <p>
-              Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-              et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-              faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-              mauris vel est.
-              </p>
-            </div>
-          </div>
-          
-
-</div>
+        </div>
     </main>
     <footer class="container">
         <div class="first-level">
@@ -148,9 +83,9 @@
     </div>
     
     </footer>
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="js/navbar.js"></script>
 
-
+    
 </body>
 </html>

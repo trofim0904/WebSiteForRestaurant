@@ -22,10 +22,10 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Про Нас</a></li>
-                <li><a href="menu.html#menutitle">Меню</a></li>
-                <li><a href="gallery.html" class="active">Галерея</a></li>
-                <li><a href="reserv.html#reserv-table">Резервування</a></li>
+                <li><a href="index.php">Про Нас</a></li>
+                <li><a href="menu.php#menutitle">Меню</a></li>
+                <li><a href="gallery.php" class="active">Галерея</a></li>
+                <li><a href="reserv.php#reserv-table">Резервування</a></li>
                 <li><a href="JavaScript:alert('На даний момент сторінка КОНТАКТИ не доступна');">Контакти</a></li>
          
             
@@ -36,7 +36,7 @@
             
             <h1><p>ресторан</p>Sopilka</h1>
             <div class="center-button">
-                <a href="JavaScript: let isGo = confirm('Ви дійсно хочете замовити столик?'); if(isGo){window.location.href = 'reserv.html#reserv-table'};">Замовити столик</a>
+                <a href="JavaScript: let isGo = confirm('Ви дійсно хочете замовити столик?'); if(isGo){window.location.href = 'reserv.php#reserv-table';}">Замовити столик</a>
             </div>
         </div>
     </header>
